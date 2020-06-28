@@ -1,0 +1,47 @@
+{
+  "name": "laravel-backbone/settings",
+  "description": "Easy Persistent Settings Management for Laravel",
+  "type": "package",
+  "keywords": [
+    "settings",
+    "laravel",
+    "lumen"
+  ],
+  "homepage": "https://www.laravelbackbone.com",
+  "require": {
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "graham-campbell/testbench": "^3.3",
+    "phpunit/phpunit": "^5.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Laravel Backbone",
+      "email": "author@laravelbackbone.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LaravelBackbone\\Settings\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LaravelBackbone\\Settings\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelBackbone\\Settings\\Providers\\SettingsServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
